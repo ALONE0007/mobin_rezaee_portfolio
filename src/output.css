@@ -748,6 +748,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -937,6 +940,12 @@
   }
   .bg-\[\#2E2C29\] {
     background-color: #2E2C29;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[131417\] {
+    background-color: 131417;
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
@@ -1136,6 +1145,10 @@
   .leading-tight {
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
