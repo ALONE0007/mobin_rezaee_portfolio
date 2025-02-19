@@ -11,6 +11,6 @@
 #homeIcon:hover #home{
     background-color: red;
 }
-html,body{
+*,html,body{
     overflow-x: hidden;
 }
