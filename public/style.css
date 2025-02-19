@@ -1,3 +1,16 @@
-body,html{
+.uppercase{
+    font-weight: 900;
+}
+#moreAboutMeBtn::before{
+    left: 100px;
+    top: 30px;
+    transform: translate(-50%, -50%);
+    transition: width 500ms, height 500ms;
+}
+
+#homeIcon:hover #home{
+    background-color: red;
+}
+html,body{
     overflow-x: hidden;
 }
