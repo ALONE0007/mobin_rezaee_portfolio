@@ -556,18 +556,6 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
-  .top-\[5\%\] {
-    top: 5%;
-  }
-  .top-\[100px\] {
-    top: 100px;
-  }
-  .top-\[19px\] {
-    top: 19px;
-  }
-  .top-\[1px\] {
-    top: 1px;
-  }
   .top-\[20px\] {
     top: 20px;
   }
@@ -589,6 +577,9 @@
   .top-\[2px\] {
     top: 2px;
   }
+  .top-\[5\%\] {
+    top: 5%;
+  }
   .top-\[50\%\] {
     top: 50%;
   }
@@ -597,6 +588,15 @@
   }
   .top-\[5\] {
     top: 5;
+  }
+  .top-\[100px\] {
+    top: 100px;
+  }
+  .top-\[19px\] {
+    top: 19px;
+  }
+  .top-\[1px\] {
+    top: 1px;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -939,8 +939,14 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pt-11 {
+    padding-top: calc(var(--spacing) * 11);
+  }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-110 {
+    padding-top: calc(var(--spacing) * 110);
   }
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
@@ -950,6 +956,9 @@
   }
   .pb-9 {
     padding-bottom: calc(var(--spacing) * 9);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
