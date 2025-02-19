@@ -1454,6 +1454,16 @@
       top: calc(var(--spacing) * 5);
     }
   }
+  .md\:top-6 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:top-7 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * 7);
+    }
+  }
   .md\:top-8 {
     @media (width >= 48rem) {
       top: calc(var(--spacing) * 8);
