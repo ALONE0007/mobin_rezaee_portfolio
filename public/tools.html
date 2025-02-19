@@ -6,9 +6,18 @@
     <link rel="stylesheet" href="../src/output.css">
     <title>Tools</title>
 </head>
-<body class="bg-[#131417] flex justify-center items-center h-screen">
+<body class="bg-[#131417] flex flex-col justify-center items-center h-screen">
     
     <p class="text-white font-bold text-2xl">:) درحال ساخت</p>
 
+    <button onclick="goBack()" class="py-2 px-6 rounded-2xl mt-5 bg-red-600 text-white font-bold">برگرد به عقب</button>
+
+
+    <script>
+
+        function goBack (){
+            history.back()
+        }
+    </script>
 </body>
 </html>
