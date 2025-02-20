@@ -21,8 +21,14 @@
 }
 
 </style>
-<body class="bg-[#131417]">
+<body class="bg-[#131417] relative">
     
+
+    <!-- circle -->
+    <div class="flex justify-center items-center">
+        <div class="absolute size-[500px] bg-primary
+      blur-[200px] md:opacity-100 opacity-70 top-[40%]"></div>
+    </div>
 
     <div id="anim" class="bg-[#222222] absolute h-full duration-400 w-full bottom-0 z-50 rounded-tr-[30px] rounded-tl-[30px] flex justify-center items-center">
         <p id="loading" class="text-primary text-5xl font-poppins flex justify-center items-center gap-x-4">LOADING<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 animate-spin">
@@ -41,7 +47,7 @@
                 <span class="text-white">Best</span>
                 <span class="text-primary">Projects</span>
             </p>
-            <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] -z-10 left-1/2 transform -translate-x-1/2">WORKS</p>
+            <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] -z-10 left-1/2 transform -translate-x-1/2 md:opacity-70">WORKS</p>
         </div>
     </div>
     
@@ -206,11 +212,11 @@
                 <span class="text-white">Regular</span>
                 <span class="text-primary">Projects</span>
             </p>
-            <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] -z-10 left-1/2 transform -translate-x-1/2">WORKS</p>
+            <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] opacity-40 -z-10 left-1/2 transform -translate-x-1/2">WORKS</p>
         </div>
     </div>
     
-        <div data-aos="fade-up" class="grid md:grid-cols-2 justify-center items-center lg:grid-cols-3 gap-y-20 pt-10 pb-24">
+        <div class="grid md:grid-cols-2 justify-center items-center lg:grid-cols-3 gap-y-20 pt-10 pb-24">
         
             <div data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
