@@ -20,8 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
       animElem.style.height = sum + "%";
 
       if (sum < 0) {
-        clearInterval(secondInterval);
+          clearInterval(secondInterval);
       }
     }, 1);
   }, 1);
+
+  setTimeout(function(){
+    document.getElementById('loading').style.display = 'none'
+
+  },700)
 });
