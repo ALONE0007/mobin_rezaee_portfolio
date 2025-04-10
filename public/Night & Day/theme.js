@@ -9,6 +9,7 @@ export function initTheme() {
     // اعمال وضعیت ذخیره‌شده هنگام بارگیری صفحه
     if (userStatus === "light") {
         darkSvg.classList.remove("hidden");
+        document.querySelector('#anim').classList.replace('bg-[#222222]','bg-[#fff]')
         lightSvg.classList.add("hidden");
         document.body.classList.remove('darkMode');
         document.body.classList.add('lightMode');
@@ -38,15 +39,4 @@ export function initTheme() {
             status = true;
         }
     });
-
-
-    let messageElem = document.querySelector('#message')
-
-
-    setTimeout(() => {
-        messageElem.classList.add("opacity-0")
-    }, 2000);
-    setTimeout(() => {
-        messageElem.classList.add("hidden")
-    }, 2200);
 }

@@ -25,10 +25,7 @@ body,html{
 }
 
 </style>
-<body class="bg-[#131417] relative">
-    
-        <!-- message -->
-     <div id="message" class="absolute h-screen w-screen bg-red-400 z-50 flex justify-center items-center text-3xl font-vazir text-center">لایت مود و دارک مود این صفحه هنوز تکمیل نشده است</div>
+<body class="bg-[#131417] relative h-screen">
 
      <!-- theme Button -->
      <button class="fixed themeButton cursor-pointer bg-slate-900 rounded-full size-12 right-5 top-5 z-50 /// flex justify-center items-center font-bold text-white">
@@ -49,7 +46,7 @@ body,html{
       blur-[200px] md:opacity-100 opacity-70 top-[40%] overflow-hidden"></div>
     </div>
 
-    <div id="anim" class="bg-[#222222] absolute h-full duration-400 w-full bottom-0 z-50 rounded-tr-[30px] rounded-tl-[30px] flex justify-center items-center">
+    <div id="anim" class="bg-[#222222] absolute h-full w-full bottom-0 z-50 rounded-tr-[30px] rounded-tl-[30px] flex justify-center items-center">
         <p id="loading" class="text-primary text-5xl font-poppins flex justify-center items-center gap-x-4">LOADING<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 animate-spin">
             <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
           </svg>
@@ -63,7 +60,7 @@ body,html{
     data-aos-duration="2000" class="flex justify-center items-center pt-10">
         <div class="relative pb-26 text-center">
             <p id="myProjects" class="absolute text-4xl md:text-5xl top-[19px] md:top-5 left-1/2 flex gap-x-2 transform -translate-x-1/2">
-                <span class="text-white">Best</span>
+                <span class="text-white bestParagraph">Best</span>
                 <span class="text-primary">Projects</span>
             </p>
             <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] -z-10 left-1/2 transform -translate-x-1/2 md:opacity-70">WORKS</p>
@@ -228,7 +225,7 @@ body,html{
     data-aos-duration="2000" class="flex justify-center items-center py-10">
         <div class="relative pb-26 text-center">
             <p id="myProjects" class="absolute text-4xl md:text-5xl top-[19px] md:top-5 left-1/2 flex gap-x-2 transform -translate-x-1/2">
-                <span class="text-white">Regular</span>
+                <span class="text-white regularParagraph">Regular</span>
                 <span class="text-primary">Projects</span>
             </p>
             <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] opacity-40 -z-10 left-1/2 transform -translate-x-1/2">WORKS</p>
@@ -387,7 +384,7 @@ body,html{
             <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="about.html">
                 <i class="fa fa-user"></i>
             </a>
-            <a id="homeIcon" class="flex justify-center items-center bg-primary hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50" href="projects.html">
+            <a id="homeIcon" class="secondProjectHomeIcon flex justify-center items-center bg-primary hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50" href="projects.html">
                 <i class="fa fa-briefcase"></i>
             </a>
             <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="tools.html">
@@ -403,8 +400,8 @@ body,html{
 
 
     <!-- mobile Nav menu -->
-    <div class="fixed bg-[#2B2A2A] text-white md:hidden flex justify-center items-center md:w-52 md:h-screen h-20 w-full right-0 bottom-0 z-50 rounded-tr-2xl rounded-tl-2xl">
-        <ul class="flex md:flex-col justify-end items-center gap-x-5 bg-[#252525] px-4 py-3 rounded-2xl">
+    <div class="fixed bg-[#2B2A2A] text-white md:hidden flex justify-center items-center md:w-52 md:h-screen h-20 w-full right-0 bottom-0 z-40 rounded-tr-2xl rounded-tl-2xl">
+        <ul class="projectNavBar flex md:flex-col justify-end items-center gap-x-5 bg-[#252525] px-4 py-3 rounded-2xl">
 
             <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl duration-100 size-[50px] text-[20px] relative z-50 shadow-xs shadow-primary" href="home.html">
                 <i class="fa fa-home"></i>
@@ -412,7 +409,7 @@ body,html{
             <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="about.html">
                 <i class="fa fa-user"></i>
             </a>
-            <a id="homeIcon" class="flex justify-center items-center bg-primary hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50" href="projects.html">
+            <a id="homeIcon" class="secondProjectHomeIcon flex justify-center items-center bg-primary hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50" href="projects.html">
                 <i class="fa fa-briefcase"></i>
             </a>
             <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="tools.html">
