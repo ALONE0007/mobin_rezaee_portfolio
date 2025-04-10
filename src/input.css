@@ -4,9 +4,14 @@
     font-family: poppins;
     src: url(../fonts/Poppins-Regular.ttf);
 }
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/Vazir-Regular.ttf);
+}
 
 @theme{
     --font-poppins: 'poppins';
+    --font-vazir: 'vazir';
     --color-primary: #ffb400;
 }
 

@@ -1,0 +1,59 @@
+*,body,p,h1,h2,h3,html,.gap-y-4,.secondNavBar,#homeIcon{
+    transition: all 300ms;
+
+}
+body.lightMode{
+    background-color: rgb(240, 240, 240);
+}
+body.darkMode{
+    background-color: #131417;
+}
+
+body.lightMode .leading-loose {
+    color: #131417;
+}
+
+body.lightMode .text-left {
+    color: #414141;
+}
+body.lightMode #moreAboutMeBtn {
+    color: #585858;
+}
+body.lightMode .gap-y-4 {
+    background-color: rgba(186, 189, 189, 0.575);
+}
+body.lightMode .secondNavBar {
+    background-color: rgba(186, 189, 189, 0.575);
+}
+body.lightMode .aboutSecondNavBar {
+    background-color: rgba(186, 189, 189, 0.575);
+}
+body.lightMode .text-gray-300 {
+    color:black;
+}
+body.lightMode .info{
+    color:rgb(49, 49, 49);
+}
+body.lightMode #myWorks{
+    color:rgba(104, 104, 104, 0.445);
+}
+body.lightMode .fixed:not(.themeButton) {
+    background-color: rgb(159, 161, 161);
+}
+
+body.lightMode #homeIcon:not(.firstHomeIcon):not(.secondFirstHomeIcon):not(.secondAboutIcon){
+    background-color: rgb(160, 160, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px; /* معادل rounded-2xl */
+    transition-duration: 100ms;
+    width: 50px;
+    height: 50px; /* size-[50px] */
+    font-size: 20px;
+    position: relative; /* برای z-index اعمال‌شده */
+    z-index: 50;
+}
+body.lightMode #homeIcon:hover {
+    background-color: #ffb400;
+}

@@ -1,3 +1,5 @@
+import { initTheme } from "./Night & Day/theme.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   let animElem = document.querySelector("#anim");
 
@@ -20,13 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
       animElem.style.height = sum + "%";
 
       if (sum < 0) {
-          clearInterval(secondInterval);
+        clearInterval(secondInterval);
       }
     }, 1);
   }, 1);
 
-  setTimeout(function(){
-    document.getElementById('loading').style.display = 'none'
+  setTimeout(function () {
+    document.getElementById("loading").style.display = "none";
+  }, 700);
+});
 
-  },700)
+// adding lightMode && darkMode theme //
+
+document.addEventListener("DOMContentLoaded", function() {
+    initTheme();
 });

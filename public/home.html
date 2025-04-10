@@ -7,11 +7,28 @@
   <link rel="stylesheet" href="../aos/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../src/output.css">
+  <link rel="stylesheet" href="Night & Day/theme.css">
 
   <title>ALONE PORTFOLIO</title>
 </head>
 <body class="bg-[#131417] text-white relative h-screen">
     
+    <!-- theme Button -->
+     <button class="fixed themeButton cursor-pointer bg-slate-900 rounded-full size-12 right-5 top-5 z-50 /// flex justify-center items-center font-bold">
+
+        <!-- light -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lightSvg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+          </svg>
+        <!-- dark -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden darkSvg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+          
+
+
+     </button>
+
     <div id="anim" class="bg-[#222222] absolute h-full duration-400 w-full bottom-0 z-50 rounded-tr-[30px] rounded-tl-[30px] flex justify-center items-center">
         <p id="loading" class="text-primary text-5xl font-poppins flex justify-center items-center gap-x-4">LOADING<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 animate-spin">
             <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
@@ -60,7 +77,7 @@
         <!-- Action Bar -->
         <div class="md:fixed hidden md:flex justify-end items-center md:w-52 md:h-screen h-20 w-full right-5 top-0">
             <ul class="flex md:flex-col justify-end items-end gap-y-4 font-poppins py-5 px-4 shadow-xl rounded-2xl bg-[#222121]">
-                    <a id="homeIcon" class="flex justify-center items-center bg-primary rounded-2xl duration-100 size-[50px] text-[20px] relative z-50" href="home.html">
+                    <a id="homeIcon" class="firstHomeIcon flex justify-center items-center bg-primary rounded-2xl duration-100 size-[50px] text-[20px] relative z-50" href="home.html">
                         <i class="fa fa-home"></i>
                     </a>
                     <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="about.html">
@@ -79,15 +96,14 @@
                 
             </ul>
         </div>
-        
 
 
     </div>
 
-    <div class="fixed bg-[#2B2A2A] md:hidden flex justify-center items-center md:w-52 md:h-screen h-20 w-full right-0 bottom-0 z-50 rounded-tr-2xl rounded-tl-2xl">
-        <ul class="flex md:flex-col justify-end items-center gap-x-5 bg-[#252525] px-4 py-3 rounded-2xl">
+    <div class="fixed bg-[#2B2A2A] md:hidden flex justify-center items-center md:w-52 md:h-screen h-20 w-full right-0 bottom-0 z-40 rounded-tr-2xl rounded-tl-2xl">
+        <ul class="secondNavBar flex md:flex-col justify-end items-center gap-x-5 bg-[#252525] px-4 py-3 rounded-2xl">
 
-            <a id="homeIcon" class="flex justify-center items-center bg-primary rounded-2xl duration-100 size-[50px] text-[20px] relative z-50" href="home.html">
+            <a id="homeIcon" class="secondFirstHomeIcon flex justify-center items-center bg-primary rounded-2xl duration-100 size-[50px] text-[20px] relative z-50" href="home.html">
                 <i class="fa fa-home"></i>
             </a>
             <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="about.html">
@@ -110,7 +126,8 @@
 
 
     <script src="../aos/aos.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
+
     <script>
         AOS.init()
     </script>
