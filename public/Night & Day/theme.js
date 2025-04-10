@@ -39,4 +39,16 @@ export function initTheme() {
             status = true;
         }
     });
+
+
+
+    themeButtonElem.addEventListener("click", function () {
+        themeButtonElem.style.transition = "transform 0.3s ease-in-out";
+        themeButtonElem.style.transform = "rotate(360deg)";
+    
+        setTimeout(() => {
+            themeButtonElem.style.transform = "rotate(0deg)"; // بازگشت به حالت اولیه
+        }, 200);
+    });
+    
 }

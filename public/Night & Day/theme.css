@@ -84,3 +84,12 @@ body.lightMode #homeIcon:not(.firstHomeIcon):not(.secondFirstHomeIcon):not(.seco
 body.lightMode #homeIcon:hover {
     background-color: #ffb400;
 }
+
+
+.themeButton {
+    transition: transform 0.3s ease-in-out;
+}
+
+.themeButton:active {
+    transform: rotate(360deg);
+}
