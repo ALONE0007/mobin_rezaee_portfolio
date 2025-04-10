@@ -22,16 +22,16 @@ body.lightMode .gap-y-4 {
     background-color: rgba(186, 189, 189, 0.575);
 }
 body.lightMode .secondNavBar {
-    background-color: rgba(186, 189, 189, 0.575);
+    background-color: rgb(186, 189, 189);
 }
 body.lightMode .aboutSecondNavBar {
-    background-color: rgba(186, 189, 189, 0.575);
+    background-color: rgb(186, 189, 189);
 }
 body.lightMode .projectNavBar {
-    background-color: rgba(186, 189, 189, 0.575);
+    background-color: rgb(186, 189, 189);
 }
 body.lightMode .toolsNavBar {
-    background-color: rgba(186, 189, 189, 0.575);
+    background-color: rgb(186, 189, 189);
 }
 body.lightMode .text-gray-300 {
     color:black;
@@ -66,9 +66,7 @@ body.lightMode .inner-circle{
 body.lightMode .select-none{
     background:rgb(71, 71, 71);
 }
-body.lightMode .fixed:not(.themeButton) {
-    background-color: rgb(159, 161, 161);
-}
+
 
 body.lightMode #homeIcon:not(.firstHomeIcon):not(.secondFirstHomeIcon):not(.secondAboutIcon):not(.secondProjectHomeIcon):not(.toolsHomeIcon){
     background-color: rgb(160, 160, 160);
