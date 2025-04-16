@@ -724,6 +724,15 @@
   .h-\[0px\] {
     height: 0px;
   }
+  .h-\[90px\] {
+    height: 90px;
+  }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .h-\[10px\] {
+    height: 10px;
+  }
   .h-\[200\] {
     height: 200;
   }
@@ -736,23 +745,17 @@
   .h-\[20px\] {
     height: 20px;
   }
-  .h-\[2\] {
-    height: 2;
-  }
-  .h-\[100px\] {
-    height: 100px;
-  }
-  .h-\[10px\] {
-    height: 10px;
-  }
-  .h-\[90px\] {
-    height: 90px;
-  }
   .h-\[220px\] {
     height: 220px;
   }
   .h-\[230px\] {
     height: 230px;
+  }
+  .h-\[250px\] {
+    height: 250px;
+  }
+  .h-\[2\] {
+    height: 2;
   }
   .h-\[300\%\] {
     height: 300%;
