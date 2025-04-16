@@ -6,6 +6,7 @@ h1,
 h2,
 h3,
 html,
+.personal,
 .gap-y-4,
 .secondNavBar,
 #homeIcon:not(#anim) {
@@ -86,6 +87,13 @@ body.lightMode .or {
 }
 
 body.darkMode .or {
+    color:white
+}
+body.lightMode .personal {
+    color: black;
+}
+
+body.darkMode .personal {
     color:white
 }
 
