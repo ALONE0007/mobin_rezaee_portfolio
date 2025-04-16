@@ -727,6 +727,9 @@
   .h-\[200\] {
     height: 200;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
   .h-\[20\] {
     height: 20;
   }
@@ -745,11 +748,11 @@
   .h-\[90px\] {
     height: 90px;
   }
-  .h-\[200px\] {
-    height: 200px;
-  }
   .h-\[220px\] {
     height: 220px;
+  }
+  .h-\[230px\] {
+    height: 230px;
   }
   .h-\[300\%\] {
     height: 300%;
