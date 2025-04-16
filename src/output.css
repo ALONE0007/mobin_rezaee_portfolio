@@ -551,17 +551,17 @@
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
-  .top-\[5\%\] {
-    top: 5%;
-  }
-  .top-\[100px\] {
-    top: 100px;
-  }
   .top-\[19px\] {
     top: 19px;
   }
   .top-\[1px\] {
     top: 1px;
+  }
+  .top-\[5\%\] {
+    top: 5%;
+  }
+  .top-\[100px\] {
+    top: 100px;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -724,26 +724,29 @@
   .h-\[0px\] {
     height: 0px;
   }
-  .h-\[90px\] {
-    height: 90px;
-  }
-  .h-\[100px\] {
-    height: 100px;
-  }
   .h-\[10px\] {
     height: 10px;
   }
   .h-\[200\] {
     height: 200;
   }
-  .h-\[200px\] {
-    height: 200px;
-  }
   .h-\[20\] {
     height: 20;
   }
   .h-\[20px\] {
     height: 20px;
+  }
+  .h-\[2\] {
+    height: 2;
+  }
+  .h-\[90px\] {
+    height: 90px;
+  }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .h-\[200px\] {
+    height: 200px;
   }
   .h-\[220px\] {
     height: 220px;
@@ -753,9 +756,6 @@
   }
   .h-\[250px\] {
     height: 250px;
-  }
-  .h-\[2\] {
-    height: 2;
   }
   .h-\[300\%\] {
     height: 300%;
@@ -1069,6 +1069,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -1081,12 +1085,22 @@
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
+  .text-\[2px\] {
+    font-size: 2px;
   }
   .text-\[30px\] {
     font-size: 30px;
@@ -1548,9 +1562,29 @@
       text-align: left;
     }
   }
+  .lg\:text-\[0px\] {
+    @media (width >= 64rem) {
+      font-size: 0px;
+    }
+  }
+  .lg\:text-\[50px\] {
+    @media (width >= 64rem) {
+      font-size: 50px;
+    }
+  }
+  .lg\:text-\[5px\] {
+    @media (width >= 64rem) {
+      font-size: 5px;
+    }
+  }
   .lg\:text-\[40px\] {
     @media (width >= 64rem) {
       font-size: 40px;
+    }
+  }
+  .lg\:text-\[5\*\:px\] {
+    @media (width >= 64rem) {
+      color: 5*:px;
     }
   }
   .lg\:before\:bottom-8 {
