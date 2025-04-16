@@ -1567,6 +1567,26 @@
       font-size: 0px;
     }
   }
+  .lg\:text-\[39px\] {
+    @media (width >= 64rem) {
+      font-size: 39px;
+    }
+  }
+  .lg\:text-\[3px\] {
+    @media (width >= 64rem) {
+      font-size: 3px;
+    }
+  }
+  .lg\:text-\[40px\] {
+    @media (width >= 64rem) {
+      font-size: 40px;
+    }
+  }
+  .lg\:text-\[4px\] {
+    @media (width >= 64rem) {
+      font-size: 4px;
+    }
+  }
   .lg\:text-\[50px\] {
     @media (width >= 64rem) {
       font-size: 50px;
@@ -1577,14 +1597,14 @@
       font-size: 5px;
     }
   }
-  .lg\:text-\[40px\] {
-    @media (width >= 64rem) {
-      font-size: 40px;
-    }
-  }
   .lg\:text-\[5\*\:px\] {
     @media (width >= 64rem) {
       color: 5*:px;
+    }
+  }
+  .lg\:text-\[px\] {
+    @media (width >= 64rem) {
+      color: px;
     }
   }
   .lg\:before\:bottom-8 {
