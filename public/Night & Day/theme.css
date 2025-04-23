@@ -1,43 +1,36 @@
 /* General settings for animation and transitions */
-*,
-body,
-p,
-h1,
-h2,
-h3,
-html,
-.personal,
-.gap-y-4,
-.secondNavBar,
-#homeIcon:not(#anim) {
-    transition: all 300ms;
-}
 
 /* Light mode */
 body.lightMode {
     background-color: rgb(240, 240, 240);
+    transition: all 300ms;
 }
 
 /* Dark mode */
 body.darkMode {
     background-color: #131417;
+    transition: all 300ms;
 }
 
 /* Text color adjustments in light mode */
 body.lightMode .leading-loose {
     color: #131417;
+    transition: all 300ms;
 }
 
 body.lightMode .text-left {
     color: #414141;
+    transition: all 300ms;
 }
 
 body.lightMode #moreAboutMeBtn {
     color: #585858;
+    transition: all 300ms;
 }
 
 body.lightMode .gap-y-4 {
     background-color: rgba(186, 189, 189, 0.575);
+    transition: all 300ms;
 }
 
 /* Background color settings in light mode */
@@ -46,18 +39,22 @@ body.lightMode .aboutSecondNavBar,
 body.lightMode .projectNavBar,
 body.lightMode .toolsNavBar {
     background-color: rgb(186, 189, 189);
+    transition: all 300ms;
 }
 
 body.lightMode .text-gray-300 {
     color: black;
+    transition: all 300ms;
 }
 
 body.lightMode .info {
     color: rgb(49, 49, 49);
+    transition: all 300ms;
 }
 
 body.lightMode #myWorks {
     color: rgba(104, 104, 104, 0.445);
+    transition: all 300ms;
 }
 
 /* Paragraph color settings in light mode */
@@ -66,35 +63,44 @@ body.lightMode .bestParagraph,
 body.lightMode .regularParagraph,
 body.lightMode .myParagraph {
     color: rgb(92, 92, 92);
+    transition: all 300ms;
 }
 
 /* Background and color adjustments for various elements */
 body.lightMode .rounded-3xl {
     background-color: rgba(226, 226, 226, 0.616);
     color: rgb(7, 7, 7);
+    transition: all 300ms;
 }
 
 body.lightMode .inner-circle {
     background-color: rgb(175, 175, 175);
+    transition: all 300ms;
 }
 
 body.lightMode .select-none {
     background: rgb(71, 71, 71);
+    transition: all 300ms;
 }
 
 body.lightMode .or {
     color: black;
+    transition: all 300ms;
 }
 
 body.darkMode .or {
-    color:white
+    color:white;
+    transition: all 300ms;
+    
 }
 body.lightMode .personal {
     color: black;
+    transition: all 300ms;
 }
 
 body.darkMode .personal {
-    color:white
+    color:white;
+    transition: all 300ms;
 }
 
 /* Home icon settings */
@@ -110,17 +116,21 @@ body.lightMode #homeIcon:not(.firstHomeIcon):not(.secondFirstHomeIcon):not(.seco
     font-size: 20px;
     position: relative;
     z-index: 50;
+    transition: all 300ms;
 }
 
 body.lightMode #homeIcon:hover {
     background-color: #ffb400;
+    transition: all 300ms;
 }
 
 /* Theme button settings */
 .themeButton {
     transition: transform 0.3s ease-in-out;
+    transition: all 300ms;
 }
 
 .themeButton:active {
     transform: rotate(360deg);
+    transition: all 300ms;
 }
