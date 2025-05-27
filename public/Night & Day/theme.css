@@ -92,7 +92,6 @@ body.darkMode .themeButton {
     color: black;
     background-color: white;
     transition: all 300ms;
-    
 }
 body.lightMode .themeButton {
     color: white;
@@ -107,6 +106,11 @@ body.lightMode .personal {
 
 body.darkMode .personal {
     color:white;
+    transition: all 300ms;
+}
+body.lightMode .projectsHint {
+    color:rgb(58, 58, 58);
+    background-color: transparent;
     transition: all 300ms;
 }
 body.lightMode .information {
