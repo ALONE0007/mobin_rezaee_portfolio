@@ -222,6 +222,23 @@
             
         </ul>
     </div>
+
+<button class="z-50 mb-24" onclick="vibratePhone()">لرزاندن گوشی</button>
+
+
+    <script>
+        function vibratePhone() {
+            console.log('click shod');
+            
+  if ("vibrate" in navigator) {
+    navigator.vibrate([200, 100, 200]); // مدت زمان لرزش (۲۰۰ms توقف ۱۰۰ms دوباره لرزش ۲۰۰ms)
+  } else {
+    alert("گوشی شما از لرزش پشتیبانی نمی‌کند!");
+  }
+}
+
+
+    </script>
     <script src="../aos/aos.js"></script>
     <script>
         AOS.init()
