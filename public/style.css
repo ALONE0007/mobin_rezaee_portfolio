@@ -16,6 +16,8 @@
     overflow-y: hidden;
 }
 
+
+
 @keyframes flashyBounce {
   0%, 100% {
     transform: translateY(0) rotate(0deg) scale(1);
@@ -35,4 +37,29 @@
 .flashy-bounce {
   animation: flashyBounce 2s infinite;
   transition: all 0.3s ease-in-out;
+}
+
+
+/*  */
+
+@keyframes diagonalRotate {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(5px) rotate(10deg);
+  }
+  50% {
+    transform: translateX(-5px) rotate(-10deg);
+  }
+  75% {
+    transform: translateX(5px) rotate(10deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.diagonal-rotate {
+  animation: diagonalRotate 2s infinite ease-in-out;
 }
