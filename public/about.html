@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
     <link rel="stylesheet" href="../aos/aos.css">
     <link rel="stylesheet" href="Night & Day/theme.css">
   </head>
@@ -104,7 +105,7 @@
         }
   </style>
 
-  <body class="bg-[#131417] h-screen ">
+  <body class="bg-[#131417]">
 
 
     <!-- theme Button -->
@@ -130,134 +131,206 @@
     </div>
 
     <div class="container mx-auto pt-10">
-      <div data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000" class="relative md:pb-36 pb-[100px] text-center">
-        <p
-          id="myProjects"
-          class="absolute text-4xl md:text-5xl top-[19px] md:top-8 left-1/2 flex gap-x-2 transform -translate-x-1/2"
-        >
+        <div data-aos="flip-left" data-aos-offset="0" data-aos-duration="2000" class="relative md:pb-36 pb-[100px] text-center">
+        <p id="myProjects" class="absolute text-4xl md:text-5xl top-[19px] md:top-8 left-1/2 flex gap-x-2 transform -translate-x-1/2">
           <span class="text-white aboutParagraph">About</span>
           <span class="text-primary">Me</span>
         </p>
-        <p
-          id="myWorks"
-          class="absolute text-7xl md:text-8xl text-[#222222] -z-10 left-1/2 transform -translate-x-1/2"
-        >
+        <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] -z-10 left-1/2 transform -translate-x-1/2">
           RESUME
         </p>
+        </div>
+        <div class="text-white font-poppins flex flex-col lg:flex-row justify-center items-center">
+          <!-- personal infos -->
+          
+    <div data-aos="fade-left" data-aos-duration="2000" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl w-full px-5">
+          <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-orange-600/5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-orange-400/50">
+                  <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+              </svg>
+          </div>
+          <div class="flex flex-col text-left">
+              <p class="text-gray-400 text-sm">Name:</p>
+              <p class="text-white text-base font-semibold">Mobin Rezaee</p>
+          </div>
       </div>
-
-      <!-- about me sections -->
-
-      <!-- title -->
-      <h1 data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="800" class="personal font-bold text-center text-2xl text-white mb-10 lg:pb-0 uppercase relative">
-        personal infos
-      </h1>
-
-      <div class="text-white font-poppins flex flex-col lg:flex-row justify-center items-center">
-        <!-- personal infos -->
-        
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl w-full px-5 mb-32 md:mb-0" 
-         data-aos="fade-left"
-         data-aos-anchor="#example-anchor"
-         data-aos-offset="0"
-         data-aos-duration="2000">
-
-        <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
-        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-orange-600/5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-orange-400/50">
-                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
-            </svg>
-        </div>
-        <div class="flex flex-col text-left">
-            <p class="text-gray-400 text-sm">Name:</p>
-            <p class="text-white text-base font-semibold">Mobin Rezaee</p>
-        </div>
-    </div>
-
-        <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-blue-600/10">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-500"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
-            </div>
-            <div class="flex flex-col text-left">
-                <p class="text-gray-400 text-sm">Nationality:</p>
-                <p class="text-white text-base font-semibold">Iranian</p>
-            </div>
-        </div>
-
-        <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-blue-600/10">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-500"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" /></svg>
-            </div>
-            <div class="flex flex-col text-left">
-                <p class="text-gray-400 text-sm">Age:</p>
-                <p class="text-white text-base font-semibold">19 Years</p>
-            </div>
-        </div>
-
-        <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-red-500/10">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-red-500/50"><path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" /></svg>
-            </div>
-            <div class="flex flex-col text-left">
-                <p class="text-gray-400 text-sm">Address:</p>
-                <p class="text-white text-base font-semibold">Kermanshah</p>
-            </div>
-        </div>
-
-        <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-green-500/10">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-500"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-            </div>
-            <div class="flex flex-col text-left">
-                <p class="text-gray-400 text-sm">Freelance:</p>
-                <p class="text-[#5BE85B] text-base font-semibold">Available</p>
-            </div>
-        </div>
-
-        <div onclick="copyNumber('Phone Number')" class="relative rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-purple-500/10">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-purple-500"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" /></svg>
-            </div>
-            <div class="flex flex-col text-left">
-                <p class="text-gray-400 text-sm">Phone:</p>
-                <p class="text-white text-base font-semibold">+98 933 136 890</p>
-            </div>
-
-            <!-- cpy svg -->
-            <button class="absolute top-2 right-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" /></svg>
-            </button>
-        </div>
-
-        <div onclick="copyEmail('Email')" class="relative col-span-1 sm:col-span-2 rounded-xl cursor-pointer p-4 flex items-center space-x-2 sm:space-x-3 box-shadow-soft-3d">
-    <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-blue-600/10">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path></svg>
-    </div>
-    <div class="flex flex-col text-left flex-grow"> <p class="text-gray-400 text-sm">Email</p>
-        <p class="text-white text-xs sm:text-base font-semibold break-words">mohammadmobinrezaee@gmail.com</p> </div>
-
-    <button class="absolute top-2 right-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"></path></svg>
-    </button>
-        </div>
-
-        <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-orange-600/5">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-600"><path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" /></svg>
-            </div>
-            <div class="flex flex-col text-left">
-                <p class="text-gray-400 text-sm">Languages</p>
-                <p class="text-white text-base font-semibold">Persian, English</p>
-            </div>
-        </div>
-
-    </div>
+  
+          <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-blue-600/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-500"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+              </div>
+              <div class="flex flex-col text-left">
+                  <p class="text-gray-400 text-sm">Nationality:</p>
+                  <p class="text-white text-base font-semibold">Iranian</p>
+              </div>
+          </div>
+  
+          <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-blue-600/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-500"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" /></svg>
+              </div>
+              <div class="flex flex-col text-left">
+                  <p class="text-gray-400 text-sm">Age:</p>
+                  <p class="text-white text-base font-semibold">19 Years</p>
+              </div>
+          </div>
+  
+          <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-red-500/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-red-500/50"><path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" /></svg>
+              </div>
+              <div class="flex flex-col text-left">
+                  <p class="text-gray-400 text-sm">Address:</p>
+                  <p class="text-white text-base font-semibold">Kermanshah</p>
+              </div>
+          </div>
+  
+          <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-green-500/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-500"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+              </div>
+              <div class="flex flex-col text-left">
+                  <p class="text-gray-400 text-sm">Freelance:</p>
+                  <p class="text-[#5BE85B] text-base font-semibold">Available</p>
+              </div>
+          </div>
+  
+          <div onclick="copyNumber('Phone Number')" class="relative rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-purple-500/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-purple-500"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" /></svg>
+              </div>
+              <div class="flex flex-col text-left">
+                  <p class="text-gray-400 text-sm">Phone:</p>
+                  <p class="text-white text-base font-semibold">+98 933 136 890</p>
+              </div>
+  
+              <button class="absolute top-2 right-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" /></svg>
+              </button>
+          </div>
+  
+          <div onclick="copyEmail('Email')" class="relative col-span-1 sm:col-span-2 rounded-xl cursor-pointer p-4 flex items-center space-x-2 sm:space-x-3 box-shadow-soft-3d">
+      <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-blue-600/10">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path></svg>
       </div>
+      <div class="flex flex-col text-left flex-grow"> <p class="text-gray-400 text-sm">Email</p>
+          <p class="text-white text-xs sm:text-base font-semibold break-words">mohammadmobinrezaee@gmail.com</p> </div>
+  
+      <button class="absolute top-2 right-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"></path></svg>
+      </button>
+          </div>
+  
+          <div class="rounded-xl cursor-pointer p-4 flex items-center space-x-3 box-shadow-soft-3d">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-orange-600/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-600"><path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" /></svg>
+              </div>
+              <div class="flex flex-col text-left">
+                  <p class="text-gray-400 text-sm">Languages</p>
+                  <p class="text-white text-base font-semibold">Persian, English</p>
+              </div>
+          </div>
+  
+      </div>
+        </div>
+      <!-- secondddddddddddddddddd about me sections -->
+
     </div>
+    <div data-aos="flip-left" data-aos-offset="0" data-aos-duration="2000" class="relative md:pb-36 mt-10 pb-[100px] text-center">
+        <p id="myProjects" class="absolute text-4xl md:text-5xl top-[19px] md:top-8 left-1/2 flex gap-x-2 transform -translate-x-1/2">
+          <span class="text-white aboutParagraph">My</span>
+          <span class="text-primary">Tools</span>
+        </p>
+        <p id="myWorks" class="absolute text-7xl md:text-8xl text-[#222222] -z-10 left-1/2 transform -translate-x-1/2">
+          Utensils
+        </p>
+        </div>
+
+     <div class="flex flex-wrap justify-center gap-x-5 pt-0 p-5 md:p-14 text-center text-white max-w-7xl mx-auto">
+ 
+         <div class="flex flex-row gap-5 gap-y-8 mb-8 md:mb-0">
+             
+             <div data-aos="flip-left"
+                 class="skill-card group relative overflow-hidden
+                         bg-[#131414] ring-1 ring-[#3a3a3d]
+                         sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
+                         sm:p-6 p-4 rounded-3xl flex flex-col justify-center items-center cursor-pointer
+                         transition-all duration-300 ease-in-out hover:ring-orange-700 hover:shadow-lg hover:shadow-orange-900/50">
+         
+                 <p class="font-semibold text-lg pb-3">HTML</p>
+                 <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
+                     style="background: conic-gradient(#fbbf24 0% 95%, transparent 95% 100%)">
+                     <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
+                         <span class="text-sm">95%</span>
+                     </div>
+                 </div>
+
+                 <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+             </div>
+             <div data-aos="flip-left"
+                 class="skill-card group relative overflow-hidden
+                         bg-[#131414] ring-1 ring-[#3a3a3d]
+                         sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
+                         p-4 sm:p-6 rounded-3xl flex flex-col justify-center items-center cursor-pointer
+                         transition-all duration-300 ease-in-out hover:ring-blue-600 hover:shadow-lg hover:shadow-blue-900/50">
+
+                 <p class="font-semibold text-lg pb-3">CSS</p>
+
+                 <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
+                     style="background: conic-gradient(#fbbf24 0% 90%, transparent 90% 100%)">
+                     <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
+                         <span class="text-sm">90%</span>
+                     </div>
+                 </div>
+
+                 <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+             </div>
+
+         </div>
+
+         <div class="flex flex-row gap-5 gap-y-8">
+             
+             <div data-aos="flip-right" class="skill-card group relative overflow-hidden
+                         bg-[#131414] ring-1 ring-[#3a3a3d]
+                         sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
+                         p-4 sm:p-6 rounded-3xl flex flex-col justify-center items-center cursor-pointer
+                         transition-all duration-300 ease-in-out hover:ring-teal-500 hover:shadow-lg hover:shadow-teal-900/50">
+
+                 <p class="font-semibold text-lg pb-3">TailwindCSS</p>
+
+                 <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
+                     style="background: conic-gradient(#fbbf24 0% 95%, transparent 95% 100%)">
+                     <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
+                         <span class="text-sm">95%</span>
+                     </div>
+                 </div>
+
+                 <div class="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+             </div>
+
+
+             <div data-aos="flip-right"
+                 class="skill-card group relative overflow-hidden
+                         bg-[#131414] ring-1 ring-[#3a3a3d]
+                         sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
+                         p-4 sm:p-6 rounded-3xl flex flex-col justify-center items-center cursor-pointer
+                         transition-all duration-300 ease-in-out hover:ring-yellow-500 hover:shadow-lg hover:shadow-yellow-900/50">
+
+                 <p class="font-semibold text-lg pb-3">JavaScript</p>
+
+                 <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
+                     style="background: conic-gradient(#fbbf24 0% 65%, transparent 65% 100%)">
+                     <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
+                         <span class="text-sm">65%</span>
+                     </div>
+                 </div>
+
+                 <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+             </div>
+
+         </div>
+     </div>
 
     <div
       class="md:fixed hidden md:flex justify-end items-center md:w-52 md:h-screen h-20 w-full right-5 top-0 font-poppins"
@@ -272,14 +345,6 @@
         <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="projects.html">
             <i class="fa fa-briefcase"></i>
         </a>
-        <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="tools.html">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z" clip-rule="evenodd" />
-                <path d="m10.076 8.64-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062 1.575-1.297Z" />
-                <path fill-rule="evenodd" d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-              </svg>
-        </a>
-    
     </ul>
     </div>
 
@@ -296,13 +361,6 @@
         </a>
         <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="projects.html">
             <i class="fa fa-briefcase"></i>
-        </a>
-        <a id="homeIcon" class="flex justify-center items-center bg-[#2E2C29] hover:bg-primary rounded-2xl  duration-100 size-[50px] text-[20px] z-50 shadow-xs shadow-primary" href="tools.html">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z" clip-rule="evenodd"></path>
-                <path d="m10.076 8.64-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062 1.575-1.297Z"></path>
-                <path fill-rule="evenodd" d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
-              </svg>
         </a>
         
     </ul>
@@ -324,6 +382,12 @@
     </div>
 
 
+   
+    
+    <script src="../aos/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
     <script type="module" src="script.js"></script>
     <script>
 
@@ -382,10 +446,6 @@
                 }
             }, intervalTime);
         }
-    </script>
-    <script src="../aos/aos.js"></script>
-    <script>
-        AOS.init()
     </script>
   </body>
 </html>
