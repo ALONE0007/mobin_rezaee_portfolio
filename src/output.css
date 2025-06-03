@@ -620,11 +620,35 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
+  .left-\[\%\] {
+    left: %;
+  }
+  .left-\[5\%\] {
+    left: 5%;
+  }
+  .left-\[6\%\] {
+    left: 6%;
+  }
   .left-\[30\%\] {
     left: 30%;
   }
   .left-\[51\%\] {
     left: 51%;
+  }
+  .left-\[52\%\] {
+    left: 52%;
+  }
+  .left-\[55\%\] {
+    left: 55%;
+  }
+  .left-\[57\%\] {
+    left: 57%;
+  }
+  .left-\[58\%\] {
+    left: 58%;
+  }
+  .left-\[60\%\] {
+    left: 60%;
   }
   .-z-10 {
     z-index: calc(10 * -1);
@@ -677,6 +701,9 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -688,6 +715,27 @@
   }
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
+  }
+  .mt-28 {
+    margin-top: calc(var(--spacing) * 28);
+  }
+  .mt-32 {
+    margin-top: calc(var(--spacing) * 32);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
+  .mt-41 {
+    margin-top: calc(var(--spacing) * 41);
+  }
+  .mt-42 {
+    margin-top: calc(var(--spacing) * 42);
+  }
+  .mt-43 {
+    margin-top: calc(var(--spacing) * 43);
+  }
+  .mt-44 {
+    margin-top: calc(var(--spacing) * 44);
   }
   .mt-\[200px\] {
     margin-top: 200px;
