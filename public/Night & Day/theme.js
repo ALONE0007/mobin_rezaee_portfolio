@@ -2,6 +2,8 @@ export function initTheme() {
     const themeButtonElem = document.querySelector(".themeButton");
     const btnElement = document.querySelector("#btn");
 
+    let btnStatus = false
+
     // 1. Disable transitions initially
     themeButtonElem.classList.add('transition-none'); 
     btnElement.classList.add('transition-none');
@@ -29,21 +31,17 @@ export function initTheme() {
 
     function updateToggleButton(isDark) {
         if (isDark) { // Dark mode: move button to the right
-            themeButtonElem.classList.replace('bg-orange-700', 'bg-gray-500'); 
+            themeButtonElem.classList.replace('bg-gray-700', 'bg-orange-700'); 
             btnElement.classList.add('translate-x-[50px]'); 
         } else { // Light mode: button at initial position
-            themeButtonElem.classList.replace('bg-gray-500', 'bg-orange-700'); 
+            themeButtonElem.classList.replace('bg-orange-700', 'bg-gray-700'); 
             btnElement.classList.remove('translate-x-[50px]'); 
         }
     }
 
-    // Apply the initial theme and button position immediately
     applyTheme(userTheme);
     updateToggleButton(isDarkMode); 
 
-    // 2. Re-enable transitions after a very short delay
-    // This allows the initial state to be set without animation
-    // requestAnimationFrame is a good choice for this
     requestAnimationFrame(() => {
         requestAnimationFrame(() => { // Double requestAnimationFrame for maximum compatibility
             themeButtonElem.classList.remove('transition-none');
@@ -53,9 +51,14 @@ export function initTheme() {
 
     themeButtonElem.addEventListener('click', function() {
         console.log("theme button clicked");
-
         isDarkMode = !isDarkMode; // Toggle the flag
 
+        if(btnStatus){
+            themeButtonElem.classList.replace('bg-gray-700','bg-orange-700')
+        }else{
+            themeButtonElem.classList.replace('bg-orange-700','bg-gray-700')
+
+        }
         if (isDarkMode) { 
             userTheme = "dark";
         } else { 
@@ -65,5 +68,8 @@ export function initTheme() {
         applyTheme(userTheme);
         updateToggleButton(isDarkMode); 
         localStorage.setItem("theme", userTheme);
+
+        btnStatus = !btnStatus
+        console.log(btnStatus);
     });
 }
