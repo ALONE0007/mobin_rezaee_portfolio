@@ -160,12 +160,14 @@
     }
 }
 
+
+
 </style>
 <body class="bg-[#131417] relative min-h-screen overflow-x-hidden">
 
-    <div class="blurry-circle circle-1"></div>
-    <div class="blurry-circle circle-2"></div>
-    <div class="blurry-circle circle-3"></div>
+    <div class="blurry-circle circle-1 hidden sm:block"></div>
+    <div class="blurry-circle circle-2 hidden sm:block"></div>
+    <div class="blurry-circle circle-3 hidden sm:block"></div>
 
      <!-- theme Button -->
     <button class="fixed themeButton cursor-pointer bg-slate-900 rounded-full size-9 right-3 top-3 z-50 /// flex justify-center items-center font-bold text-white">
@@ -182,14 +184,19 @@
 
      </button>
      
-    <div id="anim" class="bg-[#222222] absolute h-full w-full bottom-0 z-50 rounded-tr-[30px] rounded-tl-[30px] flex justify-center items-center">
-        <p id="loading" class="text-primary text-5xl font-poppins flex justify-center items-center gap-x-4">LOADING<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 animate-spin">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
-          </svg>
-        </p>
-    </div>
+    <div id="anim"
+  class="bg-[#222222] absolute h-full w-full bottom-0 z-50 rounded-tr-[30px] rounded-tl-[30px] flex justify-center items-center overflow-hidden"><p id="loading" class="text-primary text-5xl font-poppins flex justify-center items-center gap-x-4"> LOADING<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"class="size-14 animate-spin"><path
+stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+      />
+    </svg>
+  </p>
+</div>
 
-    <div class="container mx-auto flex flex-col lg:pl-16 xl::pl-20">
+<div class="flex w-full justify-center items-center h-screen">
+
+    <div class="container absolute size-full flex flex-col lg:pl-16 xl::pl-20">
 
     <div data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
@@ -510,6 +517,7 @@
     </div>
 
     </div>
+</div>
 
     <!-- action bar -->
     <div class="md:fixed hidden md:flex justify-end items-center md:w-52 md:h-screen h-20 w-full right-5 top-0">
@@ -547,7 +555,6 @@
     <script>
         AOS.init()
     </script>
-        <script type="module" src="script.js"></script>
-
+    <script type="module" src="script.js"></script>
 </body>
 </html>
