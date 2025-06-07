@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="../src/output.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Night & Day/theme.css">
+  <link rel="stylesheet" href="customCursor.css">
 
   <title>ALONE PORTFOLIO</title>
 </head>
-<body style="overflow: auto;" class="bg-[#131417] text-white relative h-screen">
+<body style="overflow: auto;" class="bg-[#131417] text-white relative h-screen selection:text-black selection:bg-primary">
     <!-- theme Button -->
-     <div class="w-[90px] themeButton z-50 cursor-pointer h-10 bg-orange-700 rounded-3xl py-1 px-1 flex justify-between fixed right-2 top-2 duration-500">
+     <div class="w-[90px] themeButton z-50 h-10 bg-orange-700 rounded-3xl py-1 px-1 flex justify-between fixed right-2 top-2 duration-500">
     <div class="flex items-center">
         <p class="absolute left-2 text-white"> 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 fill-current">
@@ -22,7 +23,7 @@
             </svg> 
         </p>
     </div>
-    <button id="btn" class="bg-white cursor-pointer rounded-full size-8 z-40 absolute top-1 left-1 transition-transform duration-500 ease-in-out"></button>
+    <button id="btn" class="bg-white rounded-full size-8 z-40 absolute top-1 left-1 transition-transform duration-500 ease-in-out"></button>
     <div class="flex items-center">
         <p class="text-white absolute right-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -40,7 +41,12 @@ stroke-linecap="round"
       />
     </svg>
   </p>
-</div>
+    </div>
+    
+    <div class="cursor">
+    <div class="cursor-content"></div>
+    </div>
+    <div class="cursor-follower"></div>
 
     
     <div class="container mx-auto pt-5 relative">
@@ -143,8 +149,7 @@ stroke-linecap="round"
     </div>
     
 
-
-
+    <script src="../public/customCursor.js"></script>
     <script src="../aos/aos.js"></script>
     <script type="module" src="script.js"></script>
 

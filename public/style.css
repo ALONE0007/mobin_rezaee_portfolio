@@ -58,7 +58,6 @@
     transform: translateX(0) rotate(0deg);
   }
 }
-
 .diagonal-rotate {
   animation: diagonalRotate 2s infinite ease-in-out;
 }

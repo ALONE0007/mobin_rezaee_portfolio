@@ -548,6 +548,9 @@
   .-top-\[190\%\] {
     top: calc(190% * -1);
   }
+  .-top-\[900px\] {
+    top: calc(900px * -1);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -574,6 +577,18 @@
   }
   .top-\[5\%\] {
     top: 5%;
+  }
+  .top-\[900\] {
+    top: 900;
+  }
+  .top-\[900px\] {
+    top: 900px;
+  }
+  .top-\[90\] {
+    top: 90;
+  }
+  .top-\[9\] {
+    top: 9;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -680,6 +695,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -706,6 +724,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
   }
   .inline-block {
     display: inline-block;
@@ -903,8 +924,20 @@
   .animate-bounce {
     animation: var(--animate-bounce);
   }
+  .animate-ping {
+    animation: var(--animate-ping);
+  }
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
   .animate-spin {
     animation: var(--animate-spin);
+  }
+  .cursor-no-drop {
+    cursor: no-drop;
+  }
+  .cursor-none {
+    cursor: none;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -1096,11 +1129,56 @@
   .bg-\[\#\] {
     background-color: #;
   }
+  .bg-\[\#ff7b0098\] {
+    background-color: #ff7b0098;
+  }
+  .bg-\[\#ff510098\] {
+    background-color: #ff510098;
+  }
   .bg-\[\#ff\] {
     background-color: #ff;
   }
+  .bg-\[\#ffa6007e\] {
+    background-color: #ffa6007e;
+  }
+  .bg-\[\#ffa60098\] {
+    background-color: #ffa60098;
+  }
+  .bg-\[\#ffa600a9\] {
+    background-color: #ffa600a9;
+  }
+  .bg-\[\#ffa600d2\] {
+    background-color: #ffa600d2;
+  }
+  .bg-\[\#ffa80798\] {
+    background-color: #ffa80798;
+  }
+  .bg-\[\#ffa807d2\] {
+    background-color: #ffa807d2;
+  }
+  .bg-\[\#ffb400\] {
+    background-color: #ffb400;
+  }
+  .bg-\[\#ffb30063\] {
+    background-color: #ffb30063;
+  }
+  .bg-\[\#ffb300a9\] {
+    background-color: #ffb300a9;
+  }
+  .bg-\[\#ffb300c4\] {
+    background-color: #ffb300c4;
+  }
+  .bg-\[\#ffb300d2\] {
+    background-color: #ffb300d2;
+  }
+  .bg-\[\#ffbb00d2\] {
+    background-color: #ffbb00d2;
+  }
   .bg-\[\#fff\] {
     background-color: #fff;
+  }
+  .bg-\[ffb400\] {
+    background-color: ffb400;
   }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
@@ -1570,6 +1648,10 @@
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
+  .ease-in {
+    --tw-ease: var(--ease-in);
+    transition-timing-function: var(--ease-in);
+  }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
@@ -1612,6 +1694,70 @@
         --tw-grayscale: grayscale(0%);
         filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
       }
+    }
+  }
+  .selection\:bg-\[\#\] {
+    & *::selection {
+      background-color: #;
+    }
+    &::selection {
+      background-color: #;
+    }
+  }
+  .selection\:bg-\[\#ffb3006c\] {
+    & *::selection {
+      background-color: #ffb3006c;
+    }
+    &::selection {
+      background-color: #ffb3006c;
+    }
+  }
+  .selection\:bg-\[ffb3006c\] {
+    & *::selection {
+      background-color: ffb3006c;
+    }
+    &::selection {
+      background-color: ffb3006c;
+    }
+  }
+  .selection\:bg-primary {
+    & *::selection {
+      background-color: var(--color-primary);
+    }
+    &::selection {
+      background-color: var(--color-primary);
+    }
+  }
+  .selection\:bg-red-900 {
+    & *::selection {
+      background-color: var(--color-red-900);
+    }
+    &::selection {
+      background-color: var(--color-red-900);
+    }
+  }
+  .selection\:text-black {
+    & *::selection {
+      color: var(--color-black);
+    }
+    &::selection {
+      color: var(--color-black);
+    }
+  }
+  .selection\:text-primary {
+    & *::selection {
+      color: var(--color-primary);
+    }
+    &::selection {
+      color: var(--color-primary);
+    }
+  }
+  .selection\:text-red-500 {
+    & *::selection {
+      color: var(--color-red-500);
+    }
+    &::selection {
+      color: var(--color-red-500);
     }
   }
   .before\:absolute {

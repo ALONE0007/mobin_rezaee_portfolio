@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../aos/aos.css">
   <link rel="stylesheet" href="Night & Day/theme.css">
   <link rel="stylesheet" href="customScrollBar.css">
+  <link rel="stylesheet" href="customCursor.css">
     <title>Projects</title>
 </head>
 
@@ -164,14 +165,14 @@
 
 
 </style>
-<body class="bg-[#131417] relative min-h-screen overflow-x-hidden">
+<body class="bg-[#131417] relative min-h-screen overflow-x-hidden selection:text-black selection:bg-primary">
 
     <div class="blurry-circle circle-1 hidden sm:block"></div>
     <div class="blurry-circle circle-2 hidden sm:block"></div>
     <div class="blurry-circle circle-3 hidden sm:block"></div>
 
      <!-- theme Button -->
-     <div class="w-[90px] themeButton z-50 cursor-pointer h-10 bg-orange-700 rounded-3xl py-1 px-1 flex justify-between fixed right-2 top-2 duration-500">
+     <div class="w-[90px] themeButton z-50 h-10 bg-orange-700 rounded-3xl py-1 px-1 flex justify-between fixed right-2 top-2 duration-500">
     <div class="flex items-center">
         <p class="absolute left-2 text-white"> 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 fill-current">
@@ -179,7 +180,7 @@
             </svg> 
         </p>
     </div>
-    <button id="btn" class="bg-white cursor-pointer rounded-full size-8 z-40 absolute top-1 left-1 transition-transform duration-500 ease-in-out"></button>
+    <button id="btn" class="bg-white rounded-full size-8 z-40 absolute top-1 left-1 transition-transform duration-500 ease-in-out"></button>
     <div class="flex items-center">
         <p class="text-white absolute right-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -197,7 +198,12 @@ stroke-linecap="round"
       />
     </svg>
   </p>
-</div>
+    </div>
+
+    <div class="cursor">
+        <div class="cursor-content"></div>
+    </div>
+    <div class="cursor-follower"></div>
 
 <div class="flex w-full justify-center items-center h-screen">
 
@@ -223,8 +229,8 @@ stroke-linecap="round"
         data-aos-offset="0"
         data-aos-duration="1300" class="bg-[#1E1F26] select-none w-72 h-56 rounded-2xl relative duration-300 group text-white ring-1 ring-[#3a3a3d] shadow">
             <div class="absolute -left-5 -top-10 duration-300">
-                <a class="block overflow-hidden w-72 h-48 rounded-2xl" href="https://alone0007.github.io/Jojo-Portfolio/public/index.html">
-                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[#3a3a3d] md:grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110" src="../image/jojo.png" alt="">
+                <a class="block overflow-hidden w-72 h-48 rounded-2xl cursor-none" href="https://alone0007.github.io/Jojo-Portfolio/public/index.html">
+                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[#3a3a3d] md:grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110 portofolio-item" src="../image/jojo.png" alt="">
                 </a>
             <div class="flex items-center justify-between pt-1">
                 <div class="flex justify-start items-center group-hover:ml-7 duration-300">
@@ -272,8 +278,8 @@ stroke-linecap="round"
         data-aos-offset="0"
         data-aos-duration="1900" class="bg-[#1E1F26] select-none w-72 h-56 rounded-2xl relative group duration-300 text-white ring-1 ring-[#3a3a3d] shadow">
             <div class="absolute -left-5 -top-10 duration-300">
-                <a class="block overflow-hidden w-72 h-48 rounded-2xl" href="https://alone0007.github.io/foods-delivery/">
-                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/foods-delivery/3a3a3d] md:grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110" src="../image/food-delivery.png" alt="">
+                <a class="block overflow-hidden w-72 h-48 rounded-2xl cursor-none" href="https://alone0007.github.io/foods-delivery/">
+                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/foods-delivery/3a3a3d] md:grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110 portofolio-item" src="../image/food-delivery.png" alt="">
                 </a>
             <div class="flex items-center justify-between pt-1">
                 <div class="flex justify-start items-center group-hover:ml-7 duration-300">
@@ -321,8 +327,8 @@ stroke-linecap="round"
         data-aos-offset="0"
         data-aos-duration="2500" class="bg-[#1E1F26] select-none w-72 h-56 rounded-2xl relative group duration-300 text-white ring-1 ring-[#3a3a3d] shadow">
             <div class="absolute -left-5 -top-10 duration-300">
-                <a class="block overflow-hidden w-72 h-48 rounded-2xl" href="https://alone0007.github.io/Style-Shop/public/index.html">
-                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/Style-Shop/public/index.html3a3a3d] md:grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110" src="../image/style.png" alt="">
+                <a class="block overflow-hidden w-72 h-48 rounded-2xl cursor-none" href="https://alone0007.github.io/Style-Shop/public/index.html">
+                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/Style-Shop/public/index.html3a3a3d] md:grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110 portofolio-item" src="../image/style.png" alt="">
                 </a>
             <div class="flex items-center justify-between pt-1">
                 <div class="flex justify-start items-center group-hover:ml-7 duration-300">
@@ -387,8 +393,8 @@ stroke-linecap="round"
     data-aos-offset="0"
     data-aos-duration="1300" class="bg-[#1E1F26] select-none w-72 h-56 rounded-2xl relative group duration-300 text-white ring-1 ring-[#3a3a3d] shadow">
             <div class="absolute -left-5 -top-10 duration-300">
-                <a class="block overflow-hidden w-72 h-48 rounded-2xl" href="https://alone0007.github.io/limoo-site/public/index.html">
-                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/limoo-site/public/index.html3a3a3d] grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110" src="../image/limoo.png" alt="">
+                <a class="block overflow-hidden w-72 h-48 rounded-2xl cursor-none" href="https://alone0007.github.io/limoo-site/public/index.html">
+                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/limoo-site/public/index.html3a3a3d] grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110 portofolio-item" src="../image/limoo.png" alt="">
                 </a>
             <div class="flex items-center justify-between pt-1
             ">
@@ -432,8 +438,8 @@ stroke-linecap="round"
     data-aos-offset="0"
     data-aos-duration="1900" class="bg-[#1E1F26] select-none w-72 h-56 rounded-2xl relative group duration-300 text-white ring-1 ring-[#3a3a3d] shadow">
             <div class="absolute -left-5 -top-10 duration-300">
-                <a class="block overflow-hidden w-72 h-48 rounded-2xl" href="https://alone0007.github.io/Shahrdari-Page/public/index.html">
-                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/Shahrdari-Page/public/index.html3a3a3d] grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110" src="../image/shahrdari.png" alt="">
+                <a class="block overflow-hidden w-72 h-48 rounded-2xl cursor-none" href="https://alone0007.github.io/Shahrdari-Page/public/index.html">
+                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/Shahrdari-Page/public/index.html3a3a3d] grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110 portofolio-item" src="../image/shahrdari.png" alt="">
                 </a>
             <div class="flex items-center justify-between pt-1">
                 <div class="flex justify-start items-center group-hover:ml-7 duration-300">
@@ -476,8 +482,8 @@ stroke-linecap="round"
     data-aos-offset="0"
     data-aos-duration="2500" class="bg-[#1E1F26] select-none w-72 h-56 rounded-2xl relative group duration-300 text-white ring-1 ring-[#3a3a3d] shadow">
             <div class="absolute -left-5 -top-10 duration-300">
-                <a class="block overflow-hidden w-72 h-48 rounded-2xl" href="https://alone0007.github.io/Bookmark-Page/public/index.html">
-                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/Bookmark-Page/public/index.html3a3a3d] grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110" src="../image/bookmark.png" alt="">
+                <a class="block overflow-hidden w-72 h-48 rounded-2xl cursor-none" href="https://alone0007.github.io/Bookmark-Page/public/index.html">
+                    <img draggable="false" class=" size-full object-cover rounded-2xl ring-1 ring-[https://alone0007.github.io/Bookmark-Page/public/index.html3a3a3d] grayscale-100 group-hover:grayscale-0 duration-300 group-hover:scale-110 portofolio-item" src="../image/bookmark.png" alt="">
                 </a>
             <div class="flex items-center justify-between pt-1">
                 <div class="flex justify-start items-center group-hover:ml-7 duration-300">
@@ -555,7 +561,7 @@ stroke-linecap="round"
             </a>
         </ul>
     </div>
-    
+    <script src="../public/customCursor.js"></script>
     <script src="../aos/aos.js"></script>
     <script>
         AOS.init()
