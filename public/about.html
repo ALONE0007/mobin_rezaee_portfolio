@@ -22,54 +22,6 @@
     #myWorks {
       font-weight: 800;
     }
-
-    /* 89% circle */
-    .circle {
-      position: relative;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: conic-gradient(#fbbf24 0% 89%, transparent 89% 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .inner-circle {
-      width: 80px;
-      height: 80px;
-      background-color: #131417;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-    }
-    .progress-text {
-      font-size: 1.5rem;
-      color: white;
-      position: absolute;
-    }
-    /* 65% circle */
-    .outer-circle {
-      position: relative;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: conic-gradient(#fbbf24 0% 65%, transparent 65% 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .inner-circle {
-      width: 70px;
-      height: 70px;
-      background-color: #131417;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-    }
     .percentage-text {
       font-size: 1.5rem;
       color: white;
@@ -78,15 +30,49 @@
     html,body{
         overflow-x: hidden;
     }
-    .box-shadow-soft-3d {
+    body.darkMode .box-shadow-soft-3d {
             box-shadow: -2px -2px 4px rgba(50, 50, 50, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.5);
             transition: all 300ms;
+            border-top: 1px solid rgba(0, 0, 0, 0);
+            border-left: 1px solid rgba(0, 0, 0, 0);
 
         }
-        .box-shadow-soft-3d:hover {
+        body.darkMode .box-shadow-soft-3d:hover {
             box-shadow: -8px -8px 16px rgba(50, 50, 50, 0.1),8px 8px 16px rgba(0, 0, 0, 0.7);
             transform: translateY(-5px);
             z-index: 10;
+            
+}
+body.lightMode .aboutText {
+    color: #5b5d61;
+    transition: color 300ms;
+}
+body.lightMode .copySvg {
+    color: black;
+    transition: color 300ms;
+}
+body.lightMode .toolsBox {
+    border: 1px solid transparent;
+    transition: color 300ms;
+}
+body.lightMode .circle {
+    background-color: rgb(243, 243, 243);
+    transition: all 300ms;
+}
+body.lightMode .circleText {
+    color: black;
+    transition: color 300ms;
+}
+body.lightMode .box-shadow-soft-3d {
+    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2); /* Lighter highlight, less opaque dark shadow */
+    transition: all 300ms;
+    border-top: 1px solid #64646409;
+    border-left: 1px solid #64646409;
+}
+body.lightMode .box-shadow-soft-3d:hover {
+     box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.6), 8px 8px 16px rgba(0, 0, 0, 0.212); /* Stronger but still light highlight, more defined dark shadow */
+    transform: translateY(-5px);
+    z-index: 10;
 }
 
 /* --- Custom CSS for the Modal --- */
@@ -160,7 +146,7 @@ stroke-linecap="round"
                   </div>
                   <div class="flex flex-col text-left">
                       <p class="text-gray-400 text-sm">Name:</p>
-                      <p class="text-white text-base font-semibold">Mobin Rezaee</p>
+                      <p class="text-white text-base font-semibold aboutText">Mobin Rezaee</p>
                   </div>
               </div>
           
@@ -170,7 +156,7 @@ stroke-linecap="round"
                       </div>
                       <div class="flex flex-col text-left">
                           <p class="text-gray-400 text-sm">Nationality:</p>
-                          <p class="text-white text-base font-semibold">Iranian</p>
+                          <p class="text-white text-base font-semibold aboutText">Iranian</p>
                       </div>
                   </div>
           
@@ -180,7 +166,7 @@ stroke-linecap="round"
                       </div>
                       <div class="flex flex-col text-left">
                           <p class="text-gray-400 text-sm">Age:</p>
-                          <p class="text-white text-base font-semibold">19 Years</p>
+                          <p class="text-white text-base font-semibold aboutText">19 Years</p>
                       </div>
                   </div>
           
@@ -190,7 +176,7 @@ stroke-linecap="round"
                       </div>
                       <div class="flex flex-col text-left">
                           <p class="text-gray-400 text-sm">Address:</p>
-                          <p class="text-white text-base font-semibold">Kermanshah</p>
+                          <p class="text-white text-base font-semibold aboutText">Kermanshah</p>
                       </div>
                   </div>
           
@@ -211,7 +197,7 @@ stroke-linecap="round"
                       </div>
                       <div class="flex flex-col text-left">
                           <p class="text-gray-400 text-sm">Education:</p>
-                          <p class="text-white text-base md:text-xs font-semibold">Software Engineering</p>
+                          <p class="text-white text-base lg:text-sm whitespace-nowrap font-semibold aboutText">Software Engineering</p>
                       </div>
                   </div>
           
@@ -220,9 +206,9 @@ stroke-linecap="round"
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path></svg>
               </div>
               <div class="flex flex-col text-left flex-grow"> <p class="text-gray-400 text-sm">Email</p>
-                  <p class="text-white text-xs sm:text-base font-semibold break-words">mohammadmobinrezaee@gmail.com</p> </div>
+                  <p class="text-white text-xs sm:text-base font-semibold break-words aboutText">mohammadmobinrezaee@gmail.com</p> </div>
           
-              <button class="absolute top-2 right-2">
+              <button class="absolute top-2 right-2 copySvg">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"></path></svg>
               </button>
                   </div>
@@ -233,7 +219,7 @@ stroke-linecap="round"
                       </div>
                       <div class="flex flex-col text-left">
                           <p class="text-gray-400 text-sm">Languages</p>
-                          <p class="text-white text-base font-semibold">Persian, English</p>
+                          <p class="text-white text-base font-semibold aboutText">Persian, English</p>
                       </div>
                   </div>
           
@@ -256,16 +242,16 @@ stroke-linecap="round"
                  
                  <div
                      class="skill-card group relative overflow-hidden
-                             bg-[#131414] ring-1 ring-[#3a3a3d]
+                             bg-[#131414] border-1 border-[#3a3a3d]
                              sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
                              sm:p-6 p-4 rounded-3xl flex flex-col justify-center items-center cursor-pointer
-                             transition-all duration-300 ease-in-out hover:ring-orange-700 hover:shadow-lg hover:shadow-orange-900/50">
+                             transition-all duration-300 ease-in-out hover:border-orange-700 hover:shadow-lg hover:shadow-orange-900/50 toolsBox">
              
                      <p class="font-semibold text-lg pb-3">HTML</p>
                      <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
                          style="background: conic-gradient(#fbbf24 0% 95%, transparent 95% 100%)">
-                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
-                             <span class="text-sm">95%</span>
+                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold circle">
+                             <span class="text-sm circleText">95%</span>
                          </div>
                      </div>
     
@@ -273,17 +259,17 @@ stroke-linecap="round"
                  </div>
                  <div
                      class="skill-card group relative overflow-hidden
-                             bg-[#131414] ring-1 ring-[#3a3a3d]
+                             bg-[#131414] border-1 border-[#3a3a3d]
                              sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
                              p-4 sm:p-6 rounded-3xl flex flex-col justify-center items-center cursor-pointer
-                             transition-all duration-300 ease-in-out hover:ring-blue-600 hover:shadow-lg hover:shadow-blue-900/50">
+                             transition-all duration-300 ease-in-out hover:border-blue-600 hover:shadow-lg hover:shadow-blue-900/50 toolsBox">
     
                      <p class="font-semibold text-lg pb-3">CSS</p>
     
                      <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
                          style="background: conic-gradient(#fbbf24 0% 90%, transparent 90% 100%)">
-                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
-                             <span class="text-sm">90%</span>
+                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold circle">
+                             <span class="text-sm circleText">90%</span>
                          </div>
                      </div>
     
@@ -295,17 +281,17 @@ stroke-linecap="round"
              <div class="flex flex-row gap-5 gap-y-8" data-aos="flip-right">
                  
                  <div class="skill-card group relative overflow-hidden
-                             bg-[#131414] ring-1 ring-[#3a3a3d]
+                             bg-[#131414] border-1 border-[#3a3a3d]
                              sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
                              p-4 sm:p-6 rounded-3xl flex flex-col justify-center items-center cursor-pointer
-                             transition-all duration-300 ease-in-out hover:ring-teal-500 hover:shadow-lg hover:shadow-teal-900/50">
+                             transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg hover:shadow-teal-900/50 toolsBox">
     
                      <p class="font-semibold text-lg pb-3">TailwindCSS</p>
     
                      <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
                          style="background: conic-gradient(#fbbf24 0% 95%, transparent 95% 100%)">
-                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
-                             <span class="text-sm">95%</span>
+                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold circle">
+                             <span class="text-sm circleText">95%</span>
                          </div>
                      </div>
     
@@ -315,17 +301,17 @@ stroke-linecap="round"
     
                  <div
                      class="skill-card group relative overflow-hidden
-                             bg-[#131414] ring-1 ring-[#3a3a3d]
+                             bg-[#131414] border-1 border-[#3a3a3d]
                              sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]
                              p-4 sm:p-6 rounded-3xl flex flex-col justify-center items-center cursor-pointer
-                             transition-all duration-300 ease-in-out hover:ring-yellow-500 hover:shadow-lg hover:shadow-yellow-900/50">
+                             transition-all duration-300 ease-in-out hover:border-yellow-500 hover:shadow-lg hover:shadow-yellow-900/50 toolsBox">
     
                      <p class="font-semibold text-lg pb-3">JavaScript</p>
     
                      <div class="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center"
                          style="background: conic-gradient(#fbbf24 0% 65%, transparent 65% 100%)">
-                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold">
-                             <span class="text-sm">65%</span>
+                         <div class="absolute w-[55px] h-[55px] sm:w-[67px] sm:h-[67px] rounded-full bg-[#131414] flex justify-center items-center text-white font-bold circle">
+                             <span class="text-sm circleText">65%</span>
                          </div>
                      </div>
     
