@@ -14,7 +14,11 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-
+/* @media screen and (max-width: 768px) {
+ .cursor,.cursor-follower,.cursor::before,.cursor-content {
+    display: none;
+    }
+} */
 .cursor {
   position: absolute;
   display: flex;
