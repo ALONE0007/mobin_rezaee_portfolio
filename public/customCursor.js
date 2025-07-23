@@ -3,6 +3,14 @@ const cursor = document.querySelector(".cursor");
 const cursorContent = document.querySelector(".cursor-content");
 const follower = document.querySelector(".cursor-follower");
 
+// ✅ تشخیص موبایل
+const isMobile = window.innerWidth <= 768;
+
+if (isMobile) {
+  cursor.style.display = "none";
+  follower.style.display = "none";
+}
+
 // Initialize position variables
 let posX = 0;
 let posY = 0;
@@ -16,14 +24,15 @@ let hasMouseMoved = false;
 
 // Function to update the cursor positions
 function animateCursor() {
-  posX += (mouseX - posX) / 9;
-  posY += (mouseY - posY) / 9;
+  if (!isMobile) {
+    posX += (mouseX - posX) / 9;
+    posY += (mouseY - posY) / 9;
 
-  // Use transform for better performance if possible, but keeping original for now
-  follower.style.left = posX - 20 + "px";
-  follower.style.top = posY - 20 + "px";
-  cursor.style.left = mouseX + "px";
-  cursor.style.top = mouseY + "px";
+    follower.style.left = posX - 20 + "px";
+    follower.style.top = posY - 20 + "px";
+    cursor.style.left = mouseX + "px";
+    cursor.style.top = mouseY + "px";
+  }
 
   requestAnimationFrame(animateCursor);
 }
@@ -33,6 +42,8 @@ animateCursor();
 
 // Event listener for mouse movement
 function handleInitialMouseMove(e) {
+  if (isMobile) return;
+
   if (!hasMouseMoved) {
     function checkScreenWidth() {
       if (window.innerWidth > 768) {
@@ -42,7 +53,7 @@ function handleInitialMouseMove(e) {
 
         cursor.classList.add("visible");
         follower.classList.add("visible");
-      } else if(window.innerWidth < 768) {
+      } else {
         cursor.style.opacity = "0";
         follower.style.opacity = "0";
         hasMouseMoved = false;
@@ -53,39 +64,37 @@ function handleInitialMouseMove(e) {
     }
 
     checkScreenWidth();
-
     window.addEventListener("resize", checkScreenWidth);
 
-    // Remove this specific event listener after it runs once
     document.removeEventListener("mousemove", handleInitialMouseMove);
-
-    // Now, add the permanent mousemove listener (which updates positions)
     document.addEventListener("mousemove", handlePermanentMouseMove);
   }
 
-  // Update positions for the current mouse move, even if it's the initial one
   clientX = e.clientX;
   clientY = e.clientY;
   mouseX = clientX + window.scrollX;
   mouseY = clientY + window.scrollY;
 }
 
-// Permanent mousemove handler to update cursor positions
+// Permanent mousemove handler
 function handlePermanentMouseMove(e) {
+  if (isMobile) return;
+
   clientX = e.clientX;
   clientY = e.clientY;
   mouseX = clientX + window.scrollX;
   mouseY = clientY + window.scrollY;
 }
 
-// Initial mousemove listener (will be replaced after first move)
+// Initial mousemove listener
 document.addEventListener("mousemove", handleInitialMouseMove);
 
-// Event listener for scroll to update mouseX/Y
+// Scroll listener
 document.addEventListener(
   "scroll",
   function () {
-    // When scrolling, recalculate mouseX/Y based on last known clientX/Y and new scroll position
+    if (isMobile) return;
+
     mouseX = clientX + window.scrollX;
     mouseY = clientY + window.scrollY;
   },
@@ -95,20 +104,15 @@ document.addEventListener(
 // Select all portfolio items
 const portfolioItems = document.querySelectorAll(".portofolio-item");
 
-// Add event listeners for mouseenter and mouseleave on each item
+// Add event listeners for hover
 portfolioItems.forEach((item) => {
-  // --- Store original styles as constants if they might be dynamic ---
-  // const originalCursorBackground = cursor.style.background || 'white';
-  // const originalCursorBoxShadow = cursor.style.boxShadow || '0 0 2px white';
-
-  // Store the mouseleave function in a variable to be able to remove it later
   let currentItemMouseLeaveHandler = null;
 
   item.addEventListener("mouseenter", function (e) {
+    if (isMobile) return;
+
     const targetHovered = e.currentTarget;
 
-    // Ensure the cursor is visible if it wasn't already (e.g., if user hovers before first move)
-    // This handles cases where mouse moves directly over an item without hitting other document space first.
     if (!hasMouseMoved) {
       cursor.style.opacity = "1";
       follower.style.opacity = "1";
@@ -117,57 +121,41 @@ portfolioItems.forEach((item) => {
       document.addEventListener("mousemove", handlePermanentMouseMove);
     }
 
-    // --- Important: Remove previous nested mouseleave listener if it exists ---
-    // This is crucial to avoid memory leaks and incorrect behavior.
     if (currentItemMouseLeaveHandler) {
-      targetHovered.removeEventListener(
-        "mouseleave",
-        currentItemMouseLeaveHandler
-      );
-      currentItemMouseLeaveHandler = null; // Clear the reference
+      targetHovered.removeEventListener("mouseleave", currentItemMouseLeaveHandler);
+      currentItemMouseLeaveHandler = null;
     }
 
-    // --- Apply shared active classes to trigger CSS transitions for cursor and follower ---
     cursor.classList.add("active");
     follower.classList.add("active");
 
-    // --- Reset any specific styles from previous hovers ---
     cursorContent.innerHTML = "";
     cursorContent.style.paddingLeft = "";
-    cursor.style.background = "white"; // Default background
-    cursor.style.boxShadow = "0 0 2px white"; // Default shadow
-    cursor.style.transition = ""; // Reset transition to default from CSS
+    cursor.style.background = "white";
+    cursor.style.boxShadow = "0 0 2px white";
+    cursor.style.transition = "";
 
-    // --- Logic for specific hover effects based on element classes/tags ---
-
-    // Check if the hovered item has 'box-shadow-soft-3d' class.
     if (targetHovered.classList.contains("box-shadow-soft-3d")) {
       cursorContent.innerHTML = "copy";
       cursor.style.background = "#b9b5b51e";
 
-      // Define and store the specific mouseleave handler for this condition
       currentItemMouseLeaveHandler = function () {
         setTimeout(() => {
-          cursor.style.background = "white"; // Reset background after delay
+          cursor.style.background = "white";
         }, 350);
       };
-      targetHovered.addEventListener(
-        "mouseleave",
-        currentItemMouseLeaveHandler
-      );
+      targetHovered.addEventListener("mouseleave", currentItemMouseLeaveHandler);
     }
 
-    // Check if the hovered item itself is an IMG tag.
     if (targetHovered.tagName === "IMG") {
       cursorContent.innerHTML = "Click";
       cursorContent.style.paddingLeft = "0px";
       cursor.style.background = "#ffa600a9";
       cursor.style.boxShadow = "0 0 2px #ffb300a9";
 
-      // Define and store the specific mouseleave handler for this condition
       projectLinkLeaveHandler = function () {
-        cursor.style.background = "white"; // Reset background instantly
-        cursor.style.transition = "all 100ms"; // Apply a specific transition on leave
+        cursor.style.background = "white";
+        cursor.style.transition = "all 100ms";
         setTimeout(() => {
           cursor.style.transition = "none";
         }, 200);
@@ -177,25 +165,16 @@ portfolioItems.forEach((item) => {
   });
 
   item.addEventListener("mouseleave", function () {
-    // Ensure any specific mouseleave handler added by mouseenter is removed
+    if (isMobile) return;
+
     if (currentItemMouseLeaveHandler) {
       this.removeEventListener("mouseleave", currentItemMouseLeaveHandler);
-      currentItemMouseLeaveHandler = null; // Clear the reference
+      currentItemMouseLeaveHandler = null;
     }
 
     cursor.classList.remove("active");
     follower.classList.remove("active");
 
-    // Reset cursor content and styles to default after a delay for smooth transition out
-    // Only reset if no specific handler took over or the default is desired.
-    // This is a general fallback, ensure it doesn't conflict with specific resets.
-
-    // setTimeout(() => {
-    //     cursorContent.innerHTML = '';
-    //     cursorContent.style.paddingLeft = '';
-    //     cursor.style.background = 'white';
-    //     cursor.style.boxShadow = '0 0 2px white';
-    //     cursor.style.transition = ''; // Reset transition to CSS default
-    // }, 350); // This delay might need adjustment based on your 'active' class transition.
+    // reset if needed
   });
 });
